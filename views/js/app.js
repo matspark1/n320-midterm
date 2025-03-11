@@ -126,6 +126,9 @@ previewBtn.addEventListener("click", () => {
 
   const randomNum = Math.floor(Math.random() * 100000000);
 
+  myPDF.addText("Shop Sparkman", 24);
+  myPDF.addText("________________________________");
+  myPDF.addText(" ");
   myPDF.addText(`Invoice #${randomNum}`, 18);
   myPDF.addText(`Date: ${formattedDate} ${formattedTime}`);
   myPDF.addText("________________________________");
@@ -152,6 +155,7 @@ previewBtn.addEventListener("click", () => {
   myPDF.addText(`Subtotal: $${subtotal.toFixed(2)}`);
   myPDF.addText(" ");
   myPDF.addText(`Tax: $${tax.toFixed(2)}`);
+  myPDF.addText(" ");
   myPDF.addText(`Total: $${total.toFixed(2)}`, 16);
 
   myPDF.showPDF();
