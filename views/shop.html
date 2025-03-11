@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Shop Sparkman</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <nav>
+        <h1>Shop Sparkman</h1>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/shop">Shop</a>
+          <a href="/about">About</a>
+        </div>
+      </nav>
+    </div>
+    <div class="home-wrap">
+      <div class="shop-wrap">
+        <div class="shop-box">
+          <img src="/media/jordan4s.jpg" alt="" />
+          <h3>Jordan 4s</h3>
+          <p>$999.99</p>
+          <button id="jordans">Add to Cart</button>
+        </div>
+        <div class="shop-box">
+          <img src="/media/reebokleather.jpg" alt="" />
+          <h3>Reeboks</h3>
+          <p>$129.99</p>
+          <button id="reebok">Add to Cart</button>
+        </div>
+        <div class="shop-box">
+          <img src="/media/converse.jpg" alt="" />
+          <h3>Converse</h3>
+          <p>$99.99</p>
+          <button id="converse">Add to Cart</button>
+        </div>
+        <div class="shop-box">
+          <img src="/media/Radeon7900XTX.jpg" alt="" />
+          <h3>Radeon 7900 XTX</h3>
+          <p>$599.99</p>
+          <button id="radeon">Add to Cart</button>
+        </div>
+        <div class="shop-box">
+          <img src="/media/5090.jpg" alt="" />
+          <h3>5090 FE</h3>
+          <p>$1299.99</p>
+          <button id="5090">Add to Cart</button>
+        </div>
+        <div class="shop-box">
+          <img src="/media/10PVCCon.jpg" alt="" />
+          <h3>10' PVC Conduit</h3>
+          <p>$59.99</p>
+          <button id="PVC">Add to Cart</button>
+        </div>
+        <div class="shop-box">
+          <img src="/media/10MetalCon.png" alt="" />
+          <h3>10' Metal Conduit</h3>
+          <p>$99.99</p>
+          <button id="metal">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="home-wrap">
+      <div class="header">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Your Shopping Cart</h3>
+      </div>
+      <table id="shoppingcart">
+        <tr>
+          <th>Your Items</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </table>
+    </div>
+    <div class="home-wrap">
+      <input type="text" id="saveName" placeholder="Your Name" />
+      <input type="email" id="saveEmail" placeholder="Your Email" />
+      <div class="pdfBtns">
+        <button id="previewBtn">
+          <i class="fa-solid fa-file"></i> Preview Your Invoice
+        </button>
+      </div>
+    </div>
+    <section>
+      <iframe id="pdf-preview" src="" frameborder="0"></iframe>
+    </section>
+    <div class="pdfBtns" id="pdf-download"></div>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
