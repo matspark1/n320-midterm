@@ -2,7 +2,7 @@
 
 ### Live Link
 
-[Home Page](https://{username}.github.io/{reponame}/homework-2)  
+[Home Page](https://n320-midterm.onrender.com/)  
 
 ---
 
